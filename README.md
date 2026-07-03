@@ -64,9 +64,6 @@ cd Expense-Tracker
 4. View your updated balance instantly.
 5. Delete individual transactions or clear all data.
 
-## 📸 Screenshots
-
-You can add screenshots of the application here.
 
 ## 🔮 Future Improvements
 
