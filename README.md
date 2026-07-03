@@ -6,9 +6,7 @@ A modern and responsive Expense Tracker web application built using HTML, CSS, a
 
 🔗 https://tanusri-dummu.github.io/Expense-Tracker/
 
-## 📸 Preview
 
-> Add a screenshot of your project here (optional)
 
 ## ✨ Features
 
