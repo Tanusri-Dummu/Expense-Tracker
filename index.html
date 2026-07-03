@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Expense Tracker | Tanusri</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div>
+                <h1>
+                    <i class="fa-solid fa-wallet"></i>
+                    Expense Tracker
+                </h1>
+
+                <p>
+                    Manage your income & expenses efficiently
+                </p>
+            </div>
+
+            <button class="theme-btn" id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </header>
+
+        <!-- Balance -->
+
+        <section class="balance-card">
+
+            <p>Available Balance</p>
+
+            <h2 id="balance">
+                ₹0
+            </h2>
+
+        </section>
+
+        <!-- Income Expense Cards -->
+
+        <section class="summary">
+
+            <div class="card income-card">
+
+                <div class="icon income-icon">
+
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Total Income</h3>
+
+                    <h2 id="income">
+
+                        ₹0
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="card expense-card">
+
+                <div class="icon expense-icon">
+
+                    <i class="fa-solid fa-arrow-trend-down"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Total Expense</h3>
+
+                    <h2 id="expense">
+
+                        ₹0
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Add Transaction -->
+
+        <section class="form-container">
+
+            <h2>
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Transaction
+
+            </h2>
+
+            <form id="transactionForm">
+
+                <div class="input-group">
+
+                    <label>Description</label>
+
+                    <input
+                        type="text"
+                        id="description"
+                        placeholder="Example : Salary, Food, Shopping"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Amount</label>
+
+                    <input
+                        type="number"
+                        id="amount"
+                        placeholder="Enter Amount"
+                        required>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button
+                        type="button"
+                        id="incomeBtn"
+                        class="income-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Income
+
+                    </button>
+
+                    <button
+                        type="button"
+                        id="expenseBtn"
+                        class="expense-btn">
+
+                        <i class="fa-solid fa-minus"></i>
+
+                        Add Expense
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- History -->
+
+        <section class="history">
+
+            <div class="history-header">
+
+                <h2>
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    Transaction History
+
+                </h2>
+
+                <button id="clearAll" class="clear-btn">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+            <ul id="transactionList">
+
+            </ul>
+
+            <div class="empty-state" id="emptyState">
+
+                <i class="fa-solid fa-receipt"></i>
+
+                <h3>No Transactions Yet</h3>
+
+                <p>
+
+                    Add your first income or expense to get started.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+
+                Designed & Developed with ❤️ for better utilize
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
